@@ -74,10 +74,12 @@ main {
 }
 
 /* colocar o ponto quer dizer que esta se referindo a uma classe criada no html*/
-.btn-site:hover {
+.botao-contato:hover {
     /* hover é para mudar quando passar o mouse em cima*/
     opacity: 0.7;
     transition: 0.3s;
+    background-color: red;
+    color: white;
 }
 
 
@@ -87,6 +89,7 @@ main {
     justify-content: center;
     background-color: var(--primary-color);
     padding: 12px 17px;
+    font-size: 20px;
 }
 
 /*fim do header*/
@@ -99,15 +102,14 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: end;
+
 }
 
 .container-esquerda-cima p {
     text-indent: 30px;
-    word-break: break-all;
-    max-width: 100%;
-    overflow-x: auto;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .btn-saibamais-principal {
@@ -133,6 +135,7 @@ h2 {
     margin-left: 20px;
     margin-top: 20px;
     align-self: center;
+    font-size: 30px;
 }
 
 .ul-categorias {
@@ -166,9 +169,8 @@ h2 {
     border-left: 5px solid red;
     transform: scale(1.05);
     background-color: rgb(228, 228, 0);
-    
-}
 
+}
 
 /* fim do main*/
 
@@ -184,3 +186,67 @@ footer {
 }
 
 /* fim do footer*/
+
+
+@media screen and (max-width: 400px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /*dividir no meio*/
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /*dividir no meio*/
+        border-radius: 5px;
+    }
+
+    navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        height: 100%;
+    }
+
+    .Logomarca-pedro {
+        max-width: 100%;
+        
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /*dividir no meio*/
+        border-radius: 5px;
+    }
+    
+    navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        height: 40;
+    }
+    
+    .Logomarca-pedro {
+        max-width: 800px;
+        
+    
+    }
+
+}
